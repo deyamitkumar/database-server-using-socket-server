@@ -4,7 +4,7 @@ data=""
 database={}
 def server_program():
     # get the hostname
-    
+
     host = socket.gethostname()
     port = 5000  # initiate port no above 1024
 
@@ -98,7 +98,15 @@ def findCustomer(findCustomerName):
     if findCustomerName not in database:
         return "customer not found"
     else:
-        return "{} {}".format(findCustomerName,database[findCustomerName])
+        temp=database.get(findCustomerName)
+        report=str(findCustomerName)
+        for item in temp:
+            if item!="":
+                report=report+"|"+item
+            else:
+                report=report+"|  "+item
+    return report
+        #return "{} {}".format(findCustomerName,database[findCustomerName])
 
 
 def addCustomer(name,age,address,phone):
@@ -128,7 +136,7 @@ def deleteCustomer(name):
 
 def updateCustomerAge(name,fieldToBeUpdate):
     if name not in database:
-        print("Customer does not exist")
+        return "Customer does not exist"
     else:
         userDetails=database.get(name)
         i=0
@@ -149,7 +157,7 @@ def updateCustomerAge(name,fieldToBeUpdate):
 
 def updateCustomerAddress(name,fieldToBeUpdate):
     if name not in database:
-        print("Customer does not exist")
+        return "Customer does not exist"
     else:
         userDetails=database.get(name)
         i=0
@@ -170,7 +178,7 @@ def updateCustomerAddress(name,fieldToBeUpdate):
 
 def updateCustomerPhone(name,fieldToBeUpdate):
     if name not in database:
-        print("Customer does not exist")
+        return "Customer does not exist"
     else:
         userDetails=database.get(name)
         i=0

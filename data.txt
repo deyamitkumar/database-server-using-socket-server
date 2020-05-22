@@ -5,7 +5,7 @@ prosun|23|bagbari|01784123456
 amit|30|saint marc|4152095142
 jayanta|22|Atateken Street|5142090034
 ahmad|91|1888 Pepper Lane|5142090027
-Max|40|123 Atwater Avenue|5142090003
+max|40|123 Atwater Avenue|5142090003
 jervis|37|Beaudry Street|5142090035
 siri|13|123 Apple street|5142090009
 alexa|12|Bishop Street|514-209-0835
