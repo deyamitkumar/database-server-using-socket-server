@@ -19,7 +19,7 @@ def client_program():
         #---------------------------------------------
 
 
-        print("Python DB Menu \n \n1. Find customer  \n 2. Add customer \n 3. Delete customer \n 4. Update customer age \n 5. Update customer address \n 6. Update customer phone \n 7. Print report \n 8. Exit  \n\nSelect:")
+        print("\n Python DB Menu \n \n1. Find customer  \n 2. Add customer \n 3. Delete customer \n 4. Update customer age \n 5. Update customer address \n 6. Update customer phone \n 7. Print report \n 8. Exit  \n\nSelect:")
         userInput = int(input("Enter your preffered option, i.e: enter any number between 1 to 8: "))
         if userInput==1:
             findCustomerName = input("Enter the name of the customer: ").lower()

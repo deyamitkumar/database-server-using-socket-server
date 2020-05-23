@@ -24,8 +24,9 @@ def server_program():
             break
         else:
             receivedDataTuple=data.split(",")
-        print("from connected user: " )
-        print(receivedDataTuple)
+        #uncomment below 2 line to see what server is receiving
+        #print("from connected user: " )
+        #print(receivedDataTuple)
 
         track=0
         for item in receivedDataTuple:
